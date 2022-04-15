@@ -1,0 +1,25 @@
+.header {
+    padding: 1.5rem 0;
+    margin: auto;
+    background-color: $color-dark-blue;
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+    }
+
+    .logo {
+        width: 8rem;
+    }
+}
+
+.nav {
+
+    &-menu {
+        display: flex;
+        gap: 2rem;
+        font-size: 1.4rem;
+    }
+}
