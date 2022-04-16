@@ -4,15 +4,14 @@ main {
     height: 100%;
 }
 
-.teste2 {
-    margin-top: 10rem;
+.wrapper {
+    position: absolute;
+    top: 10%;
 }
 
 .section-main {
     text-align: center;
-    height: 100%;
-    position: absolute;
-    top: 10%;
+
 
     &__title {
         margin-top: 3rem;
@@ -26,6 +25,33 @@ main {
 
     .btn {
         margin-top: 3rem;
+    }
+}
+
+.section-secondary {
+    margin-top: 10rem;
+}
+
+.benefits {
+    display: grid;
+    gap: 8rem;
+
+    &__item {
+        text-align: center;
+
+        &--img {
+            width: 6rem;
+        }
+
+        &--title {
+            font-size: 1.8rem;
+            margin-top: 2.5rem;
+        }
+
+        &--paragraph {
+            font-size: 1.4rem;
+            margin-top: 1rem;
+        }
     }
 }
 

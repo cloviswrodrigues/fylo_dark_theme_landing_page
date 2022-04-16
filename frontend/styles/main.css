@@ -82,15 +82,13 @@ main {
   height: 100%;
 }
 
-.teste2 {
-  margin-top: 10rem;
+.wrapper {
+  position: absolute;
+  top: 10%;
 }
 
 .section-main {
   text-align: center;
-  height: 100%;
-  position: absolute;
-  top: 10%;
 }
 
 .section-main__title {
@@ -105,6 +103,34 @@ main {
 
 .section-main .btn {
   margin-top: 3rem;
+}
+
+.section-secondary {
+  margin-top: 10rem;
+}
+
+.benefits {
+  display: -ms-grid;
+  display: grid;
+  gap: 8rem;
+}
+
+.benefits__item {
+  text-align: center;
+}
+
+.benefits__item--img {
+  width: 6rem;
+}
+
+.benefits__item--title {
+  font-size: 1.8rem;
+  margin-top: 2.5rem;
+}
+
+.benefits__item--paragraph {
+  font-size: 1.4rem;
+  margin-top: 1rem;
 }
 
 .btn {
