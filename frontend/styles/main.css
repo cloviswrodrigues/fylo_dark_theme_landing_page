@@ -13,6 +13,7 @@ html {
 
 .container {
   width: 90%;
+  margin: 0 auto;
 }
 
 a {
@@ -30,7 +31,6 @@ img {
 
 .header {
   padding: 1.5rem 0;
-  margin: auto;
   background-color: #1c2431;
 }
 
