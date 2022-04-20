@@ -189,4 +189,60 @@ img {
 .section-fourth {
   margin-top: 10rem;
 }
+
+.group-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card {
+  background-color: #202a3c;
+  padding: 2rem;
+  margin: 0 1.5rem 2rem 1.5rem;
+  border-radius: .4rem;
+  position: relative;
+}
+
+.card:first-child::before {
+  content: '';
+  display: inline-block;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: url(../assets/bg-quotes.png) no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: -2rem;
+  left: 0;
+}
+
+.card__description {
+  font-size: 1.1rem;
+  line-height: 2rem;
+}
+
+.card__profile {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card__img {
+  width: 3rem;
+  margin-right: 1rem;
+}
+
+.card__img img {
+  border-radius: 50%;
+}
+
+.card__name {
+  font-size: 1.2rem;
+  margin-bottom: .5rem;
+}
 /*# sourceMappingURL=main.css.map */

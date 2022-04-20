@@ -105,5 +105,57 @@
 }
 
 .section-fourth {
-    margin-top: 10rem;
+    margin-top: 10rem;    
+}
+
+.group-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    background-color: $color-dark-blue-testimonials;
+    padding: 2rem;
+    margin: 0 1.5rem 2rem 1.5rem;
+    border-radius: .4rem;
+    position: relative;
+
+    &:first-child {
+    
+        &::before {
+            content: '';
+            display: inline-block;
+            width: 2.5rem;
+            height: 2.5rem;
+            background: url(../assets/bg-quotes.png) no-repeat;
+            background-size: contain;
+            position: absolute;
+            top: -2rem;
+            left: 0;
+        }   
+    }  
+
+    &__description {
+        font-size: 1.1rem;
+        line-height: 2rem;
+    }
+
+    &__profile {
+        margin-top: 1rem;
+        display: flex;
+    }
+
+    &__img {
+        width: 3rem;
+        margin-right: 1rem;
+
+        img {            
+            border-radius: 50%;
+        }
+    }
+
+    &__name {
+        font-size: 1.2rem;
+        margin-bottom: .5rem;
+    }
 }
