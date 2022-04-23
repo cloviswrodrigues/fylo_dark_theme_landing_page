@@ -159,3 +159,46 @@
         margin-bottom: .5rem;
     }
 }
+
+.section-fifth {
+    margin-top: 10rem;
+    text-align: center;
+    background-color: $color-dark-blue;
+    padding: 4rem 3rem;
+    border-radius: 1.5rem;
+
+    &__title {
+        font-size: 1.8rem;
+    }
+
+    &__description {
+        margin-top: 2rem;
+        font-size: 1.4rem;
+        line-height: 2rem;
+    }
+}
+
+.form {
+    margin-top: 2rem;
+
+    &__input {
+        width: 100%;
+        padding: 2rem 3rem 1.5rem;
+        border-radius: 4rem;
+        font-size: 1.1rem;
+        border: none;
+    }
+
+    &__submit {
+        margin-top: 2rem;
+        width: 100%;
+        background: rgb(101,226,217);
+        background: linear-gradient(149deg, rgba(101,226,217,1) 0%, rgba(51,158,204,1) 78%);
+        padding: 1.7rem 2.5rem;
+        border-radius: 4rem;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: $color-white;
+        border: none;
+    }
+}

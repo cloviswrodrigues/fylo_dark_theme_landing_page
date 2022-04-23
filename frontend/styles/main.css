@@ -245,4 +245,47 @@ img {
   font-size: 1.2rem;
   margin-bottom: .5rem;
 }
+
+.section-fifth {
+  margin-top: 10rem;
+  text-align: center;
+  background-color: #1c2431;
+  padding: 4rem 3rem;
+  border-radius: 1.5rem;
+}
+
+.section-fifth__title {
+  font-size: 1.8rem;
+}
+
+.section-fifth__description {
+  margin-top: 2rem;
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+
+.form {
+  margin-top: 2rem;
+}
+
+.form__input {
+  width: 100%;
+  padding: 2rem 3rem 1.5rem;
+  border-radius: 4rem;
+  font-size: 1.1rem;
+  border: none;
+}
+
+.form__submit {
+  margin-top: 2rem;
+  width: 100%;
+  background: #65e2d9;
+  background: linear-gradient(149deg, #65e2d9 0%, #339ecc 78%);
+  padding: 1.7rem 2.5rem;
+  border-radius: 4rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+  border: none;
+}
 /*# sourceMappingURL=main.css.map */
