@@ -1,17 +1,10 @@
-.main {
+main {
     background-color: $color-dark-blue-main;
-    width: 100%;
-    height: 100%;
-}
-
-.wrapper {
-    background-color: $color-dark-blue-main;
-    position: absolute;
-    top: 10%;
 }
 
 .section-main {
     text-align: center;
+    background: url(../assets/bg-curvy-mobile.svg) no-repeat center, linear-gradient(180deg, $color-dark-blue 60%, $color-dark-blue-main 40%);
 
 
     &__title {
