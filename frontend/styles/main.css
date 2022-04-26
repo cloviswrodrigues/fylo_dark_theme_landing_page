@@ -8,7 +8,7 @@
 html {
   font-size: 10px;
   font-family: Raleway, sans-serif;
-  color: white;
+  color: #cbd2dc;
   width: 100%;
   height: 100%;
 }
@@ -21,6 +21,10 @@ body {
 .container {
   width: 90%;
   margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: white;
 }
 
 a {
@@ -294,7 +298,7 @@ main {
 .location::before {
   content: '';
   display: inline-block;
-  width: 4rem;
+  min-width: 1.5rem;
   height: 2rem;
   background: url(../assets/icon-location.svg) no-repeat;
   margin-top: .6rem;
@@ -332,6 +336,28 @@ main {
   background: url(../assets/icon-email.svg) no-repeat;
 }
 
+.social-media {
+  margin-top: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.social-media__icon {
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: .5rem;
+}
+
+.social-media__icon:hover {
+  border: 1px solid #65e2d9;
+  color: #65e2d9;
+}
+
 .footer {
   padding-top: 5rem;
   background-color: #0b1523;
@@ -346,5 +372,29 @@ main {
 
 .links {
   margin-top: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+
+.links__item:hover {
+  font-weight: bold;
+  color: white;
+}
+
+.attribution {
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
 }
 /*# sourceMappingURL=main.css.map */
