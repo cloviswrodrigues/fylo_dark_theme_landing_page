@@ -157,9 +157,12 @@ main {
 .section-fifth {
     margin-top: 10rem;
     text-align: center;
+    position: relative;
     background-color: $color-dark-blue;
     padding: 4rem 3rem;
-    border-radius: 1.5rem;
+    border-radius: 1.5rem;    
+    z-index: 2;
+    box-shadow: 1px 10px 20px -8px rgba(0,0,0,.5);
 
     &__title {
         font-size: 1.8rem;
@@ -173,7 +176,7 @@ main {
 }
 
 .form {
-    margin-top: 2rem;
+    margin-top: 3rem;
 
     &__input {
         width: 100%;

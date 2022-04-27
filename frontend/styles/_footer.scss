@@ -1,5 +1,8 @@
 .footer {
-    padding-top: 5rem;
+    position: relative;
+    bottom: 18rem;
+    z-index: 1;
+    padding-top: 25rem;
     background-color: $color-dark-blue-footer;
     font-size: 1.6rem;
 

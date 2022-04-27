@@ -253,9 +253,13 @@ main {
 .section-fifth {
   margin-top: 10rem;
   text-align: center;
+  position: relative;
   background-color: #1c2431;
   padding: 4rem 3rem;
   border-radius: 1.5rem;
+  z-index: 2;
+  -webkit-box-shadow: 1px 10px 20px -8px rgba(0, 0, 0, 0.5);
+          box-shadow: 1px 10px 20px -8px rgba(0, 0, 0, 0.5);
 }
 
 .section-fifth__title {
@@ -269,7 +273,7 @@ main {
 }
 
 .form {
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 
 .form__input {
@@ -366,7 +370,10 @@ main {
 }
 
 .footer {
-  padding-top: 5rem;
+  position: relative;
+  bottom: 18rem;
+  z-index: 1;
+  padding-top: 25rem;
   background-color: #0b1523;
   font-size: 1.6rem;
 }
