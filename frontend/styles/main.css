@@ -148,6 +148,10 @@ main {
   color: white;
 }
 
+.btn:hover {
+  background: #90eae4;
+}
+
 .section-third {
   margin-top: 10rem;
 }
@@ -295,6 +299,10 @@ main {
   font-weight: 700;
   color: white;
   border: none;
+}
+
+.form__submit:hover {
+  background: #90eae4;
 }
 
 .location {
