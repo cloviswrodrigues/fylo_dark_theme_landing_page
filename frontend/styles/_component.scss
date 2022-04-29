@@ -84,20 +84,17 @@ main {
     &__link {
         display: flex;
         align-items: center;
-        width: 13rem;
+        gap: .8rem;
+        width: 13.5rem;
         height: 2.3rem;
         color: $color-cyan;
         font-size: 1.2rem;
         border-bottom: .1rem solid $color-cyan;
         margin-top: 1rem;
 
-        &::after {
-            content: '';
-            display: inline-block;
-            background: url(../assets/icon-arrow.svg) no-repeat;
-            width: 1.4rem;
-            height: 1.4rem;
-            margin-left: .5rem;
+        &:hover {
+            color: $color-white;
+            border-bottom: .1rem solid $color-white;        
         }
     }
 }
