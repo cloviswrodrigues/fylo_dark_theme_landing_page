@@ -20,6 +20,25 @@ main {
     .btn {
         margin-top: 3rem;
     }
+
+    @media screen and (min-width: $break-desktop) {
+        background: url(../assets/bg-curvy-desktop.svg) no-repeat;
+        background-size: 100vw 300px;
+        padding-bottom: 10rem;
+        background-position-y: 505px;
+        
+        .container {
+            max-width: 600px;
+        }
+
+        &__title {
+            font-size: 3rem;
+        }
+
+        &__paragraph {
+            padding: 0 6rem;
+        }
+    }
 }
 
 .section-secondary {

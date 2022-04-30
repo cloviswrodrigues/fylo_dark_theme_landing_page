@@ -109,6 +109,24 @@ main {
   margin-top: 3rem;
 }
 
+@media screen and (min-width: 900px) {
+  .section-main {
+    background: url(../assets/bg-curvy-desktop.svg) no-repeat;
+    background-size: 100vw 300px;
+    padding-bottom: 10rem;
+    background-position-y: 505px;
+  }
+  .section-main .container {
+    max-width: 600px;
+  }
+  .section-main__title {
+    font-size: 3rem;
+  }
+  .section-main__paragraph {
+    padding: 0 6rem;
+  }
+}
+
 .section-secondary {
   margin-top: 10rem;
 }
