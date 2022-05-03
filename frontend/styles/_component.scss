@@ -43,6 +43,10 @@ main {
 
 .section-secondary {
     margin-top: 10rem;
+
+    .container {
+        max-width: 75rem;
+    }
 }
 
 .benefits {
@@ -65,6 +69,10 @@ main {
             font-size: 1.4rem;
             margin-top: 1rem;
         }
+    }
+
+    @media screen and (min-width: $break-desktop) {
+        grid-template: auto auto / auto auto;
     }
 }
 
