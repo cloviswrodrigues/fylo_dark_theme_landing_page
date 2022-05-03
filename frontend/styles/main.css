@@ -21,6 +21,7 @@ body {
 .container {
   width: 90%;
   margin: 0 auto;
+  max-width: 144rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -184,6 +185,8 @@ main {
 
 .section-third {
   margin-top: 10rem;
+  display: -ms-grid;
+  display: grid;
 }
 
 .section-third__img {
@@ -219,6 +222,31 @@ main {
 .section-third__link:hover {
   color: white;
   border-bottom: 0.1rem solid white;
+}
+
+@media screen and (min-width: 900px) {
+  .section-third {
+    -ms-grid-rows: 100%;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template: 100% / 1fr 1fr;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 5rem;
+  }
+  .section-third__title {
+    font-size: 3.4rem;
+    padding-right: 20rem;
+  }
+  .section-third__description {
+    font-size: 1.6rem;
+    padding-right: 10rem;
+  }
+  .section-third__link {
+    margin-top: 2rem;
+    font-size: 1.4rem;
+    width: 15.5rem;
+  }
 }
 
 .section-fourth {
