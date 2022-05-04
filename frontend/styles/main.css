@@ -261,6 +261,35 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
+}
+
+.group-card::before {
+  content: '';
+  display: inline-block;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: url(../assets/bg-quotes.png) no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: -2.1rem;
+  left: 1.3rem;
+}
+
+@media screen and (min-width: 900px) {
+  .group-card {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 3rem;
+  }
+  .group-card::before {
+    width: 6rem;
+    height: 6rem;
+    top: -4rem;
+    left: .5rem;
+  }
 }
 
 .card {
@@ -269,18 +298,6 @@ main {
   margin: 0 1.5rem 2rem 1.5rem;
   border-radius: .4rem;
   position: relative;
-}
-
-.card:first-child::before {
-  content: '';
-  display: inline-block;
-  width: 2.5rem;
-  height: 2.5rem;
-  background: url(../assets/bg-quotes.png) no-repeat;
-  background-size: contain;
-  position: absolute;
-  top: -2rem;
-  left: 0;
 }
 
 .card__description {
@@ -307,6 +324,23 @@ main {
 .card__name {
   font-size: 1.2rem;
   margin-bottom: .5rem;
+}
+
+@media screen and (min-width: 900px) {
+  .card {
+    padding: 5rem 4rem 4rem 4rem;
+  }
+  .card__description {
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+  }
+  .card__profile {
+    margin-top: 2rem;
+  }
+  .card__name {
+    font-size: 1.4rem;
+    margin-bottom: .5rem;
+  }
 }
 
 .section-fifth {
