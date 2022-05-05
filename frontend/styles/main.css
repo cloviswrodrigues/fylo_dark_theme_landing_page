@@ -64,6 +64,15 @@ img {
   width: 8rem;
 }
 
+@media screen and (min-width: 900px) {
+  .header {
+    padding: 5rem 0 5rem;
+  }
+  .header .logo {
+    width: 14rem;
+  }
+}
+
 .nav-menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -76,6 +85,13 @@ img {
   text-decoration: underline;
   font-weight: bold;
   color: white;
+}
+
+@media screen and (min-width: 900px) {
+  .nav-menu {
+    gap: 6rem;
+    font-size: 1.6rem;
+  }
 }
 
 .bg-curvy {
