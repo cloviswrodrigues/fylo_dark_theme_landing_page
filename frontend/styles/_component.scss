@@ -252,6 +252,21 @@ main {
         font-size: 1.4rem;
         line-height: 2rem;
     }
+
+    @media screen and (min-width: $break-desktop) {
+        max-width: 100rem;
+        padding: 4rem 8rem 4rem;
+        
+        
+        &__title {
+            font-size: 4rem;
+        }
+    
+        &__description {
+            font-size: 1.6rem;
+            padding: 0 7rem;
+        }
+    }
 }
 
 .form {
@@ -280,6 +295,23 @@ main {
         &:hover {
             background: lighten($color-cyan, 10) ;
         }
+    }
+
+    @media screen and (min-width: $break-desktop) {
+        display: flex;
+        gap: 3rem;
+        margin-top: 4rem;
+
+        &__input {
+            padding: 2rem 3rem;
+            font-size: 1.4rem;
+        }
+
+        &__submit {
+            width: 35%;
+            margin-top: 0;
+        }
+    
     }
 }
 

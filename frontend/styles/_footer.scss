@@ -11,6 +11,10 @@
         max-width: 16rem;
         margin-left: 1.5rem;
     }
+
+    @media screen and (min-width: $break-desktop) {
+        bottom: 12rem;
+    }
 }
 
 .links {
