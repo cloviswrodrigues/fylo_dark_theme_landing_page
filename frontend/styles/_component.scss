@@ -256,7 +256,7 @@ main {
     @media screen and (min-width: $break-desktop) {
         max-width: 100rem;
         padding: 4rem 8rem 4rem;
-        
+        margin-top: 18rem;
         
         &__title {
             font-size: 4rem;
@@ -316,7 +316,6 @@ main {
 }
 
 .location {
-    margin-top: 3rem;
     display: flex;
     gap: 3rem;
     line-height: 2.2rem;
@@ -328,6 +327,11 @@ main {
         height: 2rem;
         background: url(../assets/icon-location.svg) no-repeat;
         margin-top: .6rem;
+    }
+
+    @media screen and (min-width: $break-desktop) {
+        max-width: 38rem;
+        line-height: 2.5rem;
     }
 }
 
@@ -361,6 +365,12 @@ main {
         }
         
     }
+
+    @media screen and (min-width: $break-desktop) {
+        &__phone {
+            margin-top: 0;
+        }
+    }
 }
 
 .social-media {
@@ -378,5 +388,9 @@ main {
             border: 1px solid $color-cyan;
             color: $color-cyan;
         }
+    }
+
+    @media screen and (min-width: $break-desktop) {
+        margin-top: 0;
     }
 }
