@@ -272,12 +272,29 @@ main {
 .form {
     margin-top: 3rem;
 
+    &__group {
+        text-align: left;        
+        width: 100%;
+    }
+
     &__input {
         width: 100%;
         padding: 2rem 3rem 1.5rem;
         border-radius: 4rem;
-        font-size: 1.1rem;
+        font-size: 1.4rem;
         border: none;
+    }
+
+    .msg__error {
+        font-size: 1.1rem;
+        display: none;
+        margin-top: .4rem;
+        margin-left: 3rem;      
+        color: $color-light-red;
+    }
+
+    .activate {
+        display: block;
     }
 
     &__submit {
@@ -309,6 +326,7 @@ main {
 
         &__submit {
             width: 35%;
+            max-height: 5.56rem;
             margin-top: 0;
         }
     

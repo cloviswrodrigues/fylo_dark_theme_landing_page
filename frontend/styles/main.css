@@ -400,12 +400,29 @@ main {
   margin-top: 3rem;
 }
 
+.form__group {
+  text-align: left;
+  width: 100%;
+}
+
 .form__input {
   width: 100%;
   padding: 2rem 3rem 1.5rem;
   border-radius: 4rem;
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   border: none;
+}
+
+.form .msg__error {
+  font-size: 1.1rem;
+  display: none;
+  margin-top: .4rem;
+  margin-left: 3rem;
+  color: #ff4242;
+}
+
+.form .activate {
+  display: block;
 }
 
 .form__submit {
@@ -439,6 +456,7 @@ main {
   }
   .form__submit {
     width: 35%;
+    max-height: 5.56rem;
     margin-top: 0;
   }
 }

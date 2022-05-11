@@ -1,24 +1,21 @@
-const forms = document.querySelectorAll('.js-form')
+const form = document.querySelectorAll('.js-form')
 
-forms.forEach(initForm)
 
-function initForm(form) {
+form.addEventListener('submit', (e) => {         
+    e.preventDefault();    
     let inputEmail = form.querySelector('.form__input');
+    let emailValid = validateInput(inputEmail);
 
-    form.addEventListener('submit', (e) => {         
-        e.preventDefault();    
-        let emailValid = validateInput(inputEmail);
+    if (!emailValid) {
+        inputEmail.value = ''
+    }
+})
 
-        if (!emailValid) {
-            inputEmail.value = ''
-        }
-    })
+form.addEventListener('focusin', (e) => {
+    activeErrorInputEmail(inputEmail, false);
+    activeSucessInputEmail(inputEmail, false);
+});
 
-    form.addEventListener('focusin', (e) => {
-        activeErrorInputEmail(inputEmail, false);
-        activeSucessInputEmail(inputEmail, false);
-    });
-}
 
 function validateInput(inputEmail) {
    if (!isValidEmail(inputEmail.value)){
@@ -36,7 +33,6 @@ function isValidEmail(email){
 }
 
 function activeErrorInputEmail(inputEmail, isError) {
-    console.log('inputEmail:'+inputEmail)
     spanMsg = inputEmail.parentElement.querySelector('.msg__error');
     if (isError){
         inputEmail.classList.add('input__error');

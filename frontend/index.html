@@ -172,8 +172,11 @@
           It only takes a minute to sign up and our free starter tier is extremely generous. If you have any 
           questions, our support team would be happy to help you.
         </p>
-        <form method="POST" class="form">
-          <input class="form__input" type="text" placeholder="email@example.com">
+        <form method="POST" class="form js-form">
+          <div class="form__group">
+            <input class="form__input" type="text" placeholder="email@example.com">
+            <span class="msg__error activate">Please enter a valid email address</span>
+          </div>
           <button class="form__submit" type="submit">Get Started For Free</button>
         </form>
       </section>
