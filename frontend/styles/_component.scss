@@ -285,12 +285,19 @@ main {
         border: none;
     }
 
-    .msg__error {
+    .msg {
         font-size: 1.1rem;
         display: none;
         margin-top: .4rem;
-        margin-left: 3rem;      
-        color: $color-light-red;
+        margin-left: 3rem;       
+    
+        &__error {          
+            color: $color-light-red;
+        }
+
+        &__success {
+            color: $color-light-green;
+        }
     }
 
     .activate {

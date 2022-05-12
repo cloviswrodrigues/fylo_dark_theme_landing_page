@@ -41,6 +41,10 @@ img {
   width: 100%;
 }
 
+input {
+  outline: none;
+}
+
 .header {
   position: relative;
   padding: 1.5rem 0 5rem;
@@ -413,12 +417,19 @@ main {
   border: none;
 }
 
-.form .msg__error {
+.form .msg {
   font-size: 1.1rem;
   display: none;
   margin-top: .4rem;
   margin-left: 3rem;
+}
+
+.form .msg__error {
   color: #ff4242;
+}
+
+.form .msg__success {
+  color: #42ff7b;
 }
 
 .form .activate {

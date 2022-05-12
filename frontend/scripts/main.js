@@ -1,29 +1,29 @@
-const form = document.querySelectorAll('.js-form')
-
+const form = document.querySelector('.js-form');
+const inputEmail = form.querySelector('.form__input');
 
 form.addEventListener('submit', (e) => {         
-    e.preventDefault();    
-    let inputEmail = form.querySelector('.form__input');
+    e.preventDefault();        
     let emailValid = validateInput(inputEmail);
 
-    if (!emailValid) {
+    if (emailValid) {
         inputEmail.value = ''
     }
 })
 
 form.addEventListener('focusin', (e) => {
-    activeErrorInputEmail(inputEmail, false);
-    activeSucessInputEmail(inputEmail, false);
+    activateMsgError(inputEmail, false);
+    activateMsgSucess(inputEmail, false);
 });
 
 
-function validateInput(inputEmail) {
-   if (!isValidEmail(inputEmail.value)){
-        activeErrorInputEmail(inputEmail, true);
-        return true;
-    }else{
-        activeSucessInputEmail(inputEmail, true);
+function validateInput(fieldEmail) {
+    console.log('fieldEmail:' +fieldEmail);
+   if (!isValidEmail(fieldEmail.value)){
+    activateMsgError(fieldEmail, true);
         return false;
+    }else{
+        activateMsgSucess(fieldEmail, true);
+        return true;
     }
 }
 
@@ -32,24 +32,23 @@ function isValidEmail(email){
     return regex.exec(email) == null ? false : true;
 }
 
-function activeErrorInputEmail(inputEmail, isError) {
-    spanMsg = inputEmail.parentElement.querySelector('.msg__error');
+function activateMsgError(fieldEmail, isError) {
+    spanMsg = fieldEmail.parentElement.querySelector('.msg__error');
     if (isError){
-        inputEmail.classList.add('input__error');
-        spanMsg.classList.add('active');
+        fieldEmail.classList.add('input__error');
+        spanMsg.classList.add('activate');
     }else {
-        inputEmail.classList.remove('input__error');
-        spanMsg.classList.remove('active');
+        fieldEmail.classList.remove('input__error');
+        spanMsg.classList.remove('activate');
     }
 }
 
-function activeSucessInputEmail(inputEmail, isSucess) {
-    spanMsg = inputEmail.parentElement.querySelector('.msg__success');
+function activateMsgSucess(fieldEmail, isSucess) {
+    spanMsg = fieldEmail.parentElement.querySelector('.msg__success');
 
-    console.log('spanMsg: ',spanMsg)
     if (isSucess){
-        spanMsg.classList.add('active');
+        spanMsg.classList.add('activate');
     } else {
-        spanMsg.classList.remove('active');
+        spanMsg.classList.remove('activate');
     }    
 }
