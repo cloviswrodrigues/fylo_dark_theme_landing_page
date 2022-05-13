@@ -1,6 +1,6 @@
 .header {
     position: relative;
-    padding: 1.5rem 0 5rem;
+    padding: 2rem 0 5rem;
     background-color: $color-dark-blue;
 
     &__content {
@@ -28,7 +28,7 @@
     &-menu {
         display: flex;
         gap: 2rem;
-        font-size: 1.4rem;
+        font-size: 1.3rem;
     }
 
     .link {
