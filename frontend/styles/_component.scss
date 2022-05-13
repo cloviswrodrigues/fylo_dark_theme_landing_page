@@ -15,6 +15,7 @@ main {
     &__paragraph {
         margin-top: 2rem;
         font-size: 1.6rem;
+        line-height: 2.2rem;
     }
 
     .btn {
@@ -22,21 +23,20 @@ main {
     }
 
     @media screen and (min-width: $break-desktop) {
-        background: url(../assets/bg-curvy-desktop.svg) no-repeat;
-        background-size: 100vw 300px;
-        padding-bottom: 10rem;
-        background-position-y: 505px;
+        background: url(../assets/bg-curvy-desktop.svg) no-repeat bottom/100% 45%, $color-dark-blue no-repeat;
+        padding-bottom: 20rem;
         
         .container {
-            max-width: 600px;
+            max-width: 700px;
         }
 
         &__title {
-            font-size: 3rem;
+            font-size: 3.5rem;
+            line-height: 5rem;
         }
 
         &__paragraph {
-            padding: 0 6rem;
+            padding: 0 12rem;
         }
     }
 }
